@@ -1,0 +1,17 @@
+server:
+  port: 18080
+
+spring:
+  application:
+    name: api-monitor
+  security:
+    user:
+      name: "admin"
+      password: "admin"
+  boot:
+    admin:
+      notify:
+        slack:
+          webhook-url: #slack web hook url
+          channel: #slack channel name
+          enabled: true
